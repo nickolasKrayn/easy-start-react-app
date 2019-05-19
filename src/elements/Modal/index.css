@@ -1,0 +1,52 @@
+.modal-overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 5;
+  }
+  .modal-content {
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      right: 40px;
+      bottom: 40px;
+      outline: none;
+      max-width: 800px;
+      margin-left: -400px;
+      background-color: transparent !important;
+      border: none;
+      display: flex;
+      flex-flow: column;
+  }
+  .modal-pop-up__filler {
+    background-color: transparent !important;
+    flex: 1 1 auto;
+  }
+  .modal-content-body {
+    position: relative;
+    width: 100%;
+    box-shadow: 0px 3px 12.2px 0.8px rgba(0, 0, 0, 0.35);
+    background-color: #fff;
+    padding: 20px;
+    color: #333;
+    overflow: auto;
+    border-radius: 4px;
+  }
+  .modal-content .modal-pop-up_close {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    font-size: 32px;
+    right: 5px;
+    color: #fff;
+  }
+  @media (max-width: 800px){
+    .modal-content {
+      max-width: auto;
+      left: 0px;
+      margin-left: 0px;
+    }
+  }
